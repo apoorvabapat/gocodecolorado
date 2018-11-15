@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flask Tutorial</title>
+  </head>
+  <body>
+    <div class="block1">
+<h1><center>Data Tigers</h1>
+  <h2>Here is an interesting quote for you: </h2>
+  <input type="text" name="" Value='apoorva'>
+  <p>
+"The limits of my language are the limits of my mind. All I know is what I have words for."
+  </p>
+<img src="http://www.naturalprogramming.com/images/smilingpython.gif">
+</div>
+<div>
+	<h2> Google Dev Bus - Rua Quatá, 255 </h2>
+{% with %}
+
+    {% set location=(-23.599097,-46.675903) %}
+    {% set style="width:500px;height:500px;"%}
+
+    {{
+    googlemap(
+        "simple-map",
+        location.0, location.1,
+        markers=[location,],
+        style=style
+        )
+    }}
+
+{% endwith %}
+</div>
+  </body>
+</html>
